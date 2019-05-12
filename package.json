@@ -1,0 +1,34 @@
+{
+  "name": "aria-slider",
+  "version": "0.0.1",
+  "description": "Accessible slider component",
+  "main": "dist/aria-slider.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "parcel index.html",
+    "build": "rm -rf ./dist && microbundle --entry ./src/index.ts --output ./dist && parcel build src/style.scss --out-dir ./dist",
+    "prepublish": "npm run build"
+  },
+  "devDependencies": {
+    "autoprefixer": "^9.5.1",
+    "microbundle": "^0.11.0",
+    "node-sass": "^4.11.0",
+    "parcel-bundler": "^1.12.3",
+    "typescript": "^3.4.2"
+  },
+  "source": "src/index.ts",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Stanko/aria-slider.git"
+  },
+  "keywords": [
+    "slider",
+    "aria"
+  ],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Stanko/aria-slider/issues"
+  },
+  "homepage": "https://github.com/Stanko/aria-slider#readme"
+}
